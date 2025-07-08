@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dash Board</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <div class="">
+      <div class="max-w-[1170px] m-auto flex justify-center">
+        <!-- mobile -->
+        <div class="mockup-phone m-auto">
+          <div class="mockup-phone-camera"></div>
+          <div class="mockup-phone-display bg-white grid">
+            <div class="items-center justify-center">
+              <!-- nav bar start-->
+
+              <div class="navbar bg-base-100 shadow-sm pt-12">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div
+                      tabindex="0"
+                      role="button"
+                      class="btn btn-ghost btn-circle"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h7"
+                        />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                    >
+                      <li><a>Add Money</a></li>
+                      <li><a>Sent Money</a></li>
+                      <li><a>Log Out</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-center">
+                  <a class="text-xl" href="landing.html" target="_blank"
+                    ><img
+                      class="w-full h-12"
+                      src="images/Bkash-Logo.jpg"
+                      alt="Bkash-Logo.jpg"
+                  /></a>
+                </div>
+                <div class="navbar-end">
+                  <button class="btn btn-ghost btn-circle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                        />
+                      </svg>
+                      <span
+                        class="badge badge-xs badge-primary indicator-item"
+                      ></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- nav bar end-->
+
+              <!-- balance card start-->
+
+              <!-- From Uiverse.io by hoshikawamaki -->
+              <div class="flex items-center justify-center">
+                <div
+                  class="shadow-xl relative overflow-hidden w-full h-50 cursor-pointer text-2xl font-bold bg-gradient-to-r from-pink-500 to-rose-500"
+                >
+                  <div class="z-10 absolute w-full h-full peer"></div>
+                  <div
+                    class="absolute peer-hover:-top-20 peer-hover:-left-16 peer-hover:w-[140%] peer-hover:h-[140%] -top-32 -left-16 w-32 h-44 rounded-full bg-pink-200 transition-all duration-500"
+                  ></div>
+                  <div
+                    class="absolute flex text-xl text-center items-end justify-end peer-hover:right-0 peer-hover:rounded-b-none peer-hover:bottom-0 peer-hover:items-center peer-hover:justify-center peer-hover:w-full peer-hover:h-full -bottom-32 -right-16 w-36 h-44 rounded-full bg-pink-200 transition-all duration-500"
+                  >
+                    <p class="text-pink-700 text-4xl">TK <span>10000</span></p>
+                  </div>
+                  <div
+                    class="w-full h-full items-center justify-center flex uppercase text-amber-50 text-4xl"
+                  >
+                    <i class="fa-regular fa-money-check-dollar"></i>Balance
+                  </div>
+                </div>
+              </div>
+              <!-- balance card end-->
+              <div class="flex items-center justify-center">
+                <div class="">
+                  <!-- balance card -->
+
+                  <!-- From Uiverse.io by seyed-mohsen-mousavi -->
+                  <!-- <div class="flex items-center justify-center pb-6 mt-10">
+                    <div
+                      class="w-82 bg-white shadow-xl rounded-lg  py-25 flex flex-col justify-center items-center shadow-md"
+                    >
+                      <p class="text-gray-400 text-2xl text-center">
+                        Account Balance
+                      </p>
+                      <div class="">
+                        <p class="text-5xl text-center font-bold font-sans">
+                          TK <span>15000</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>  -->
+
+                  <!-- balance card -->
+
+                  <!-- add money card start -->
+
+                  <div class="py-5">
+                    <!-- card start -->
+
+                    <div
+                      class="card card-border bg-base-100 w-full shadow-lg shadow-pink-300/50"
+                    >
+                      <div class="card-body w-80">
+                        <h2
+                          class="card-title text-lg font-display text-pink-600"
+                        >
+                          Add Money
+                        </h2>
+                        <!-- input start  -->
+
+                        <input
+                          type="number"
+                          class="input input-secondary pr-3 placeholder-pink-300 text-pink-300 w-full text-center px-2"
+                          required
+                          placeholder="Enter Amount"
+                        />
+                        <!-- input start  -->
+
+                        <!-- button start  -->
+                        <div class="card-actions">
+                          <button
+                            class="btn w-full text-amber-50 px-10 shadow-lg shadow-pink-500/50 bg-pink-500 \"
+                          >
+                            Deposit
+                          </button>
+                        </div>
+                        <!-- button end  -->
+
+                        <!-- error start  -->
+
+                        <div
+                          role="alert"
+                          class="alert alert-error my-5 flex items-center justify-center gap-2 hidden bg-red-500"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 shrink-0 stroke-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                          <span class="text-white">Amount is missing</span>
+                        </div>
+
+                        <!-- error end -->
+                      </div>
+                    </div>
+
+                    <!-- card start -->
+                  </div>
+                  <!-- add money card end-->
+
+                  <!-- withdraw card start -->
+
+                  <div class="py-5">
+                    <!-- card start -->
+
+                    <div
+                      class="card card-border bg-base-100 w-full shadow-lg shadow-pink-300/50"
+                    >
+                      <div class="card-body w-80">
+                        <h2
+                          class="card-title text-lg font-display text-pink-600"
+                        >
+                          Withdraw Money
+                        </h2>
+                        <!-- input start  -->
+
+                        <input
+                          type="number"
+                          class="input input-secondary pr-3 placeholder-pink-300 text-pink-300 w-full text-center px-2"
+                          required
+                          placeholder="Enter Amount"
+                        />
+                        <!-- input start  -->
+
+                        <!-- button start  -->
+                        <div class="card-actions">
+                          <button
+                            class="btn w-full text-amber-50 px-10 shadow-lg shadow-pink-500/50 bg-pink-500 \"
+                          >
+                            Withdraw
+                          </button>
+                        </div>
+                        <!-- button end  -->
+
+                        <!-- error start  -->
+
+                        <div
+                          role="alert"
+                          class="alert alert-error my-5 flex items-center justify-center gap-2 hidden bg-red-500"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 shrink-0 stroke-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                          <span class="text-white">Amount is missing</span>
+                        </div>
+
+                        <!-- error end -->
+                      </div>
+                    </div>
+
+                    <!-- card start -->
+                  </div>
+                  <!--  withdraw card end-->
+
+                  <!-- success notification start -->
+                  <!-- From Uiverse.io by hoshikawamaki -->
+                  <div
+                    class="absolute z-51 flex mt-2 w-80 h-12 bg-white rounded-xl overflow-hidden shadow-lg border-pink-500 border-2"
+                  >
+                    <svg
+                      width="16"
+                      height="96"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M 8 0 
+               Q 4 4.8, 8 9.6 
+               T 8 19.2 
+               Q 4 24, 8 28.8 
+               T 8 38.4 
+               Q 4 43.2, 8 48 
+               T 8 57.6 
+               Q 4 62.4, 8 67.2 
+               T 8 76.8 
+               Q 4 81.6, 8 86.4 
+               T 8 96 
+               L 0 96 
+               L 0 0 
+               Z"
+                        fill="#f24970"
+                        stroke="#f24970"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                    <div class="mx-2.5 overflow-hidden w-full">
+                      <p
+                        class="mt-1.5 text-xl font-bold text-[#f24970] leading-8 mr-3 overflow-hidden text-ellipsis whitespace-nowrap"
+                      >
+                        Success !
+                      </p>
+                    </div>
+                    <button class="w-16 cursor-pointer focus:outline-none">
+                      <svg
+                        class="w-7 h-7"
+                        fill="none"
+                        stroke="#f24970"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!-- success notification end -->
+
+                  <!-- Failed notification start -->
+                  <!-- From Uiverse.io by hoshikawamaki -->
+                  <div
+                    class="absolute z-50 flex mt-2 w-80 h-12 bg-white rounded-xl overflow-hidden shadow-lg border-red-500 border-2"
+                  >
+                    <svg
+                      width="16"
+                      height="96"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M 8 0 
+               Q 4 4.8, 8 9.6 
+               T 8 19.2 
+               Q 4 24, 8 28.8 
+               T 8 38.4 
+               Q 4 43.2, 8 48 
+               T 8 57.6 
+               Q 4 62.4, 8 67.2 
+               T 8 76.8 
+               Q 4 81.6, 8 86.4 
+               T 8 96 
+               L 0 96 
+               L 0 0 
+               Z"
+                        fill="#de2c2c"
+                        stroke="#de2c2c"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                    <div class="mx-2.5 overflow-hidden w-full">
+                      <p
+                        class="mt-1.5 text-xl font-bold text-[#de2c2c] leading-8 mr-3 overflow-hidden text-ellipsis whitespace-nowrap"
+                      >
+                        Failed !
+                      </p>
+                    </div>
+                    <button class="w-16 cursor-pointer focus:outline-none">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 shrink-0 stroke-current"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke="#de2c2c"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!-- Failed notification end -->
+                </div>
+              </div>
+            </div>
+
+            <!-- log in component -->
+          </div>
+        </div>
+        <!-- mobile -->
+      </div>
+    </div>
+   
+  </body>
+</html>
