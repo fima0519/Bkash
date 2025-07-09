@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bkash</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="bg-white">
+    <!-- logInPage start  -->
+
+    <div class="py-10" id="logInPage">
+      <div class="">
+        <div class="max-w-[1170px] m-auto flex justify-center">
+          <!-- mobile -->
+          <div class="mockup-phone m-auto">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display bg-[#e3106e] grid">
+              <div class="items-center justify-center">
+                <div class="flex items-center justify-center">
+                  <div class="">
+                    <!-- logo -->
+                    <a href="index.html" target="_self">
+                      <div class="flex items-center justify-center pb-6 mt-30">
+                        <img
+                          src="images/logo.png"
+                          alt="logo.png"
+                          class="h-36 w-36"
+                        />
+                      </div>
+                    </a>
+
+                    <!-- logo -->
+
+                    <!-- log in component -->
+                    <!-- From Uiverse.io by themrsami -->
+                    <div class="relative">
+                      <div
+                        class="w-80 absolute -top-2 -left-2 -right-2 -bottom-2 rounded-lg bg-gradient-to-r from-pink-400 via-white to-pink-400 shadow-lg animate-pulse"
+                      ></div>
+                      <div
+                        id="form-container"
+                        class="bg-white p-10 rounded-lg shadow-2xl w-75 relative z-10 transform transition duration-500 ease-in-out"
+                      >
+                        <form class="space-y-5">
+                          <label
+                            class="font-semibold w-full h-12 text-black ml-1"
+                            >Enter Bkash Account Number</label
+                          >
+                          <!-- From Uiverse.io by jubayer-10 -->
+                          <div
+                            class="w-54 h-12 relative flex items-center shadow-[0px_5px_15px_rgba(0,0,0,0.03)]"
+                          >
+                            <input
+                              id="bkashNumber"
+                              required=""
+                              class="peer w-full h-full mt-2 bg-white text-lg font-light placeholder-black text-black contrast-more:placeholder-slate-500 border border-slate-200 outline-none rounded-lg focus:border-pink-400 valid:border-pink-400 focus:ring-pink-400 valid:ring-pink-400 focus:ring-1 valid:ring-1 px-3"
+                              placeholder="01XXX-XXXXXX"
+                              type="text"
+                            />
+                          </div>
+                          <label
+                            class="font-semibold w-full h-12 text-black ml-1"
+                            >Enter Pin</label
+                          >
+                          <!-- From Uiverse.io by jubayer-10 -->
+                          <div
+                            class="w-54 h-12 relative flex items-center shadow-[0px_5px_15px_rgba(0,0,0,0.03)]"
+                          >
+                            <input
+                              id="bkashPin"
+                              required=""
+                              class="peer w-full h-full mt-2 bg-white placeholder-black text-black text-lg font-light contrast-more:placeholder-slate-500 border border-slate-200 outline-none rounded-lg focus:border-pink-400 valid:border-pink-400 focus:ring-pink-400 valid:ring-pink-400 focus:ring-1 valid:ring-1 px-3"
+                              placeholder="Type ******"
+                              type="password"
+                            />
+                            <div
+                              class="w-5 absolute block peer-valid:hidden right-3 opacity-20 peer-focus:opacity-70 peer-valid:opacity-70 peer-valid:fill-indigo-500"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                                id="Outline"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M23.271,9.419A15.866,15.866,0,0,0,19.9,5.51l2.8-2.8a1,1,0,0,0-1.414-1.414L18.241,4.345A12.054,12.054,0,0,0,12,2.655C5.809,2.655,2.281,6.893.729,9.419a4.908,4.908,0,0,0,0,5.162A15.866,15.866,0,0,0,4.1,18.49l-2.8,2.8a1,1,0,1,0,1.414,1.414l3.052-3.052A12.054,12.054,0,0,0,12,21.345c6.191,0,9.719-4.238,11.271-6.764A4.908,4.908,0,0,0,23.271,9.419ZM2.433,13.534a2.918,2.918,0,0,1,0-3.068C3.767,8.3,6.782,4.655,12,4.655A10.1,10.1,0,0,1,16.766,5.82L14.753,7.833a4.992,4.992,0,0,0-6.92,6.92l-2.31,2.31A13.723,13.723,0,0,1,2.433,13.534ZM15,12a3,3,0,0,1-3,3,2.951,2.951,0,0,1-1.285-.3L14.7,10.715A2.951,2.951,0,0,1,15,12ZM9,12a3,3,0,0,1,3-3,2.951,2.951,0,0,1,1.285.3L9.3,13.285A2.951,2.951,0,0,1,9,12Zm12.567,1.534C20.233,15.7,17.218,19.345,12,19.345A10.1,10.1,0,0,1,7.234,18.18l2.013-2.013a4.992,4.992,0,0,0,6.92-6.92l2.31-2.31a13.723,13.723,0,0,1,3.09,3.529A2.918,2.918,0,0,1,21.567,13.534Z"
+                                ></path>
+                              </svg>
+                            </div>
+                            <div
+                              class="w-5 absolute hidden peer-valid:block right-3 opacity-20 peer-focus:opacity-70 peer-valid:opacity-70 peer-valid:fill-indigo-500"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                                id="Outline"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M23.271,9.419C21.72,6.893,18.192,2.655,12,2.655S2.28,6.893.729,9.419a4.908,4.908,0,0,0,0,5.162C2.28,17.107,5.808,21.345,12,21.345s9.72-4.238,11.271-6.764A4.908,4.908,0,0,0,23.271,9.419Zm-1.705,4.115C20.234,15.7,17.219,19.345,12,19.345S3.766,15.7,2.434,13.534a2.918,2.918,0,0,1,0-3.068C3.766,8.3,6.781,4.655,12,4.655s8.234,3.641,9.566,5.811A2.918,2.918,0,0,1,21.566,13.534Z"
+                                ></path>
+                                <path
+                                  d="M12,7a5,5,0,1,0,5,5A5.006,5.006,0,0,0,12,7Zm0,8a3,3,0,1,1,3-3A3,3,0,0,1,12,15Z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </form>
+
+                        <button
+                          id="btnLogIn"
+                          class="w-full h-12 bg-pink-600 hover:bg-pink-800 text-white font-bold mt-5 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        >
+                          Log in
+                        </button>
+
+                        <!-- Failed notification start -->
+                        <!-- From Uiverse.io by hoshikawamaki -->
+                        <div
+                          id="errorLogIn"
+                          class="hidden mt-6 w-full bg-white rounded-xl overflow-hidden shadow-lg border-[#9e3a5d] border-2 flex items-center gap-2"
+                        >
+                          <svg
+                            width="16"
+                            height="46"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M 8 0 
+               Q 4 4.8, 8 9.6 
+               T 8 19.2 
+               Q 4 24, 8 28.8 
+               T 8 38.4 
+               Q 4 43.2, 8 48 
+               T 8 57.6 
+               Q 4 62.4, 8 67.2 
+               T 8 76.8 
+               Q 4 81.6, 8 86.4 
+               T 8 96 
+               L 0 96 
+               L 0 0 
+               Z"
+                              fill="#9e3a5d"
+                              stroke="#9e3a5d"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            ></path>
+                          </svg>
+                          <div class="mx-2.5 overflow-hidden w-full flex items-center text-center">
+                            <p
+                              id="errorLogInMessage"
+                              class=" text-[12px] font-bold text-[#000000] leading-8 mr-3 overflow-hidden text-ellipsis whitespace-nowrap"
+                            >
+                              Failed!
+                            </p>
+                          </div>
+                          <button
+                            class="w-16 cursor-pointer focus:outline-none"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-6 w-6 shrink-0 stroke-current"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke="#9e3a5d"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <!-- Failed notification end -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- log in component -->
+            </div>
+          </div>
+          <!-- mobile -->
+        </div>
+      </div>
+    </div>
+
+    <!-- logInPage start  -->
+
+    <!-- dashBoard start  -->
+
+    <div id="dashBoardPage" class="hidden">
+      <div class="">
+        <div class="max-w-[1170px] m-auto flex justify-center">
+          <!-- mobile -->
+          <div class="mockup-phone m-auto">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display bg-white grid">
+              <div class="items-center justify-center">
+                <!-- nav bar start-->
+
+                <div class="navbar bg-white shadow-sm pt-12">
+                  <div class="navbar-start">
+                    <div class="dropdown">
+                      <div
+                        tabindex="0"
+                        role="button"
+                        class="btn bg-white border-none shadow-none"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="#000000"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7"
+                          />
+                        </svg>
+                      </div>
+                      <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                      >
+                        
+                        <li><a href="index.html">Log Out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="navbar-center">
+                    <a class="text-xl" href="index.html" target="_blank"
+                      ><img
+                        class="w-full h-12"
+                        src="images/Bkash-Logo.jpg"
+                        alt="Bkash-Logo.jpg"
+                    /></a>
+                  </div>
+                  <div class="navbar-end">
+                    <button class="btn border-none shadow-none bg-white">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="#000000"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                        />
+                      </svg>
+                    </button>
+                    <button class="btn border-none shadow-none bg-white">
+                      <div class="indicator">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="#000000"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                          />
+                        </svg>
+                        <span
+                          class="badge badge-xs badge-primary indicator-item"
+                        ></span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- nav bar end-->
+
+                <!-- balance card start-->
+
+                <!-- From Uiverse.io by hoshikawamaki -->
+                <div class="flex items-center justify-center">
+                  <div
+                    class="shadow-xl relative overflow-hidden w-full h-50 cursor-pointer text-2xl font-bold bg-gradient-to-r from-pink-500 to-rose-500"
+                  >
+                    <div class="z-10 absolute w-full h-full peer"></div>
+                    <div
+                      class="absolute peer-hover:-top-20 peer-hover:-left-16 peer-hover:w-[140%] peer-hover:h-[140%] -top-32 -left-16 w-32 h-44 rounded-full bg-pink-200 transition-all duration-500"
+                    ></div>
+                    <div
+                      class="absolute flex text-xl text-center items-end justify-end peer-hover:right-0 peer-hover:rounded-b-none peer-hover:bottom-0 peer-hover:items-center peer-hover:justify-center peer-hover:w-full peer-hover:h-full -bottom-32 -right-16 w-36 h-44 rounded-full bg-pink-200 transition-all duration-500"
+                    >
+                      <p class="text-black text-4xl">
+                        TK <span id="balance">10000</span>
+                      </p>
+                    </div>
+                    <div
+                      class="w-full h-full items-center justify-center flex uppercase text-amber-50 text-4xl"
+                    >
+                      <i class="fa-regular fa-money-check-dollar"></i>Balance
+                    </div>
+                  </div>
+                </div>
+                <!-- balance card end-->
+                <div class="flex items-center justify-center">
+                  <div class="">
+                    <!-- add money card start -->
+
+                    <div class="py-3">
+                      <!-- card start -->
+
+                      <div class="card w-full shadow-lg shadow-pink-300/50">
+                        <div class="card-body bg-white w-80">
+                          <h2
+                            class="card-title text-lg font-display text-black"
+                          >
+                            Add Money
+                          </h2>
+                          <!-- input start  -->
+
+                          <input
+                            id="depositAmount"
+                            type="number"
+                            class="input input-neutral bg-white pr-3 placeholder-black text-black w-full text-center px-2"
+                            required
+                            placeholder="Enter Amount"
+                          />
+                          <!-- input start  -->
+
+                          <!-- button start  -->
+                          <div class="card-actions">
+                            <button
+                              id="btnDeposit"
+                              class="btn w-full border-none text-white px-10 shadow-lg shadow-pink-500/50 bg-pink-500 \"
+                            >
+                              Deposit
+                            </button>
+                          </div>
+                          <!-- button end  -->
+                        </div>
+                      </div>
+
+                      <!-- card start -->
+                    </div>
+                    <!-- add money card end-->
+
+                    <!-- withdraw card start -->
+
+                    <div class="py-3">
+                      <!-- card start -->
+
+                      <div class="card w-full shadow-lg shadow-pink-300/50">
+                        <div class="card-body w-80 bg-white">
+                          <h2
+                            class="card-title text-lg font-display text-black"
+                          >
+                            Withdraw Money
+                          </h2>
+                          <!-- input start  -->
+
+                          <input
+                            id="withdrawAmount"
+                            type="number"
+                            class="input input-neutral bg-white pr-3 placeholder-black text-black w-full text-center px-2"
+                            required
+                            placeholder="Enter Amount"
+                          />
+                          <!-- input start  -->
+
+                          <!-- button start  -->
+                          <div class="card-actions">
+                            <button
+                              id="btnWithdrawn"
+                              class="btn text-white w-full border-none px-10 shadow-lg shadow-pink-500/50 bg-pink-500"
+                            >
+                              Withdraw
+                            </button>
+                          </div>
+                          <!-- button end  -->
+                        </div>
+                      </div>
+
+                      <!-- card start -->
+                    </div>
+                    <!--  withdraw card end-->
+
+                    <!-- success notification start -->
+                    <!-- From Uiverse.io by hoshikawamaki -->
+                    <div class="hidden" id="notifySuccess">
+                      <div
+                        class="absolute z-51 flex mt-2 w-80 h-12 bg-white rounded-xl overflow-hidden shadow-lg border-pink-500 border-2"
+                      >
+                        <svg
+                          width="16"
+                          height="96"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M 8 0 
+               Q 4 4.8, 8 9.6 
+               T 8 19.2 
+               Q 4 24, 8 28.8 
+               T 8 38.4 
+               Q 4 43.2, 8 48 
+               T 8 57.6 
+               Q 4 62.4, 8 67.2 
+               T 8 76.8 
+               Q 4 81.6, 8 86.4 
+               T 8 96 
+               L 0 96 
+               L 0 0 
+               Z"
+                            fill="#f24970"
+                            stroke="#f24970"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                        <div class="mx-2.5 overflow-hidden w-full">
+                          <p
+                            class="mt-1.5 text-xl font-bold text-[#f24970] leading-8 mr-3 overflow-hidden text-ellipsis whitespace-nowrap"
+                          >
+                            Success !
+                          </p>
+                        </div>
+                        <button class="w-16 cursor-pointer focus:outline-none">
+                          <svg
+                            class="w-7 h-7"
+                            fill="none"
+                            stroke="#f24970"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- success notification end -->
+
+                    <!-- Failed notification start -->
+                    <!-- From Uiverse.io by hoshikawamaki -->
+                    <div
+                      id="errorFail"
+                      class="hidden absolute z-50 flex mt-2 w-80 h-12 bg-white rounded-xl overflow-hidden shadow-lg border-red-500 border-2"
+                    >
+                      <svg
+                        width="16"
+                        height="96"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M 8 0 
+               Q 4 4.8, 8 9.6 
+               T 8 19.2 
+               Q 4 24, 8 28.8 
+               T 8 38.4 
+               Q 4 43.2, 8 48 
+               T 8 57.6 
+               Q 4 62.4, 8 67.2 
+               T 8 76.8 
+               Q 4 81.6, 8 86.4 
+               T 8 96 
+               L 0 96 
+               L 0 0 
+               Z"
+                          fill="#de2c2c"
+                          stroke="#de2c2c"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                      <div class="mx-2.5 overflow-hidden w-full">
+                        <p
+                          id="errorMessage"
+                          class="mt-1.5 text-[15px] font-bold text-[#de2c2c] leading-8 mr-3 overflow-hidden text-ellipsis whitespace-nowrap"
+                        >
+                          Failed!
+                        </p>
+                      </div>
+                      <button class="w-16 cursor-pointer focus:outline-none">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6 shrink-0 stroke-current"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#de2c2c"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+
+                    <!-- Failed notification end -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- log in component -->
+            </div>
+          </div>
+          <!-- mobile -->
+        </div>
+      </div>
+    </div>
+
+    <!-- dashBoard end  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
