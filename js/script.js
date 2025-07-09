@@ -57,6 +57,7 @@ btnDeposit.addEventListener("click", function () {
       errorFail.style.display = "none";
     }, 2000);
   } else {
+    depositAmount.value = "";
     result = currentBalance + amount;
     console.log(result);
     balance.innerText = result;
@@ -85,6 +86,7 @@ btnWithdrawn.addEventListener("click", function () {
       errorFail.style.display = "none";
     }, 2000);
   } else {
+    withdrawAmount.value = "";
     result = currentBalance - amount;
     console.log(result);
     balance.innerText = result;
