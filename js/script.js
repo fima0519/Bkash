@@ -19,7 +19,6 @@ btnLogIn.addEventListener("click", function () {
   }else{
     errorLogInMessage.innerText = "Invalid UserId or Pin."
     errorLogIn.style.display = "flex";
-  
     setTimeout(() => {
       errorLogIn.style.display = "none";
     }, 2000);
@@ -77,10 +76,10 @@ btnWithdrawn.addEventListener("click", function () {
     errorMessage.innerText = "Amount is missing."
     errorFail.style.display = "flex";
     setTimeout(() => {
-      errorWithdraw.style.display = "none";
+      errorFail.style.display = "none";
     }, 2000);
-  } else if (amount > currentBalance) {
-    errorMessage.innerText ="Amount is greater than Balance";
+  } else if (amount > currentBalance && amount < 0 ) {
+    errorMessage.innerText ="Amount is not correct.";
     errorFail.style.display = "flex";
     setTimeout(() => {
       errorFail.style.display = "none";
